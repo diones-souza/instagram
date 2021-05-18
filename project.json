@@ -3,8 +3,6 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.10.2-preview]",
-    "UiPath.Mail.Activities": "[1.10.2-preview]",
     "UiPath.System.Activities": "[21.2.1-preview]",
     "UiPath.UIAutomation.Activities": "[21.2.0-preview]"
   },

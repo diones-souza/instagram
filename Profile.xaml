@@ -74,7 +74,6 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>CustomInputForm</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <StateMachine InitialState="{x:Reference __ReferenceID5}" DisplayName="Main" sap:VirtualizedContainerService.HintSize="633.6,711.2" sap2010:WorkflowViewState.IdRef="StateMachine_1">
@@ -236,9 +235,7 @@
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Follower workflow" sap:VirtualizedContainerService.HintSize="483.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Follower.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
-                                  <InArgument x:TypeArguments="x:Int32" x:Key="limit">
-                                    <mva:VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="limitLike" />
-                                  </InArgument>
+                                  <InArgument x:TypeArguments="x:Int32" x:Key="limit">[limitLike]</InArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>
                               <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_7">
@@ -307,14 +304,12 @@
                         <Transition DisplayName="Close" sap:VirtualizedContainerService.HintSize="448.8,509.6" sap2010:WorkflowViewState.IdRef="Transition_18">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:PointCollection x:Key="ConnectorLocation">253,439.54 146.68,439.54 146.68,370.8</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">253,439.54 146.68,439.54 146.68,410.8</av:PointCollection>
                               <x:Int32 x:Key="SrcConnectionPointIndex">49</x:Int32>
                               <x:Int32 x:Key="DestConnectionPointIndex">43</x:Int32>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Transition.Condition>
-                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="indexSearch &lt;= sizeSearch" />
-                          </Transition.Condition>
+                          <Transition.Condition>[indexSearch &lt;= sizeSearch]</Transition.Condition>
                           <Transition.To>
                             <State x:Name="__ReferenceID4" DisplayName="Close" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_16">
                               <State.Entry>
@@ -371,7 +366,7 @@
                               </State.Entry>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">73.2,309.2</av:Point>
+                                  <av:Point x:Key="ShapeLocation">73.2,349.2</av:Point>
                                   <av:Size x:Key="ShapeSize">133.6,61.6</av:Size>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
@@ -380,7 +375,7 @@
                                 <Transition DisplayName="Select" sap:VirtualizedContainerService.HintSize="448.8,509.6" sap2010:WorkflowViewState.IdRef="Transition_22">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:PointCollection x:Key="ConnectorLocation">153.36,309.2 153.36,161.06 253,161.06</av:PointCollection>
+                                      <av:PointCollection x:Key="ConnectorLocation">153.36,349.2 153.36,161.06 253,161.06</av:PointCollection>
                                       <x:Int32 x:Key="SrcConnectionPointIndex">46</x:Int32>
                                       <x:Int32 x:Key="DestConnectionPointIndex">25</x:Int32>
                                     </scg:Dictionary>
@@ -390,10 +385,10 @@
                                   </Transition.To>
                                   <Transition.Condition>[indexSearch &lt; sizeSearch]</Transition.Condition>
                                 </Transition>
-                                <Transition DisplayName="T1" sap:VirtualizedContainerService.HintSize="448.8,509.6" sap2010:WorkflowViewState.IdRef="Transition_23">
+                                <Transition DisplayName="End" sap:VirtualizedContainerService.HintSize="448.8,509.6" sap2010:WorkflowViewState.IdRef="Transition_23">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <av:PointCollection x:Key="ConnectorLocation">180.08,309.2 180.08,129.2 566.76,129.2 566.76,159.2</av:PointCollection>
+                                      <av:PointCollection x:Key="ConnectorLocation">180.08,349.2 180.08,129.2 566.76,129.2 566.76,159.2</av:PointCollection>
                                       <x:Int32 x:Key="SrcConnectionPointIndex">62</x:Int32>
                                       <x:Int32 x:Key="DestConnectionPointIndex">66</x:Int32>
                                     </scg:Dictionary>
@@ -447,7 +442,7 @@
         <Transition DisplayName="Search" sap:VirtualizedContainerService.HintSize="448.8,509.6" sap2010:WorkflowViewState.IdRef="Transition_17">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">106.72,200.8 106.72,230.8 266.36,230.8 266.36,201.1</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">106.72,200.8 106.72,224.84 266.36,224.84 266.36,201.1</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">55</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">7</x:Int32>
             </scg:Dictionary>
@@ -463,11 +458,7 @@
     <StateMachine.Variables>
       <Variable x:TypeArguments="x:Int32" Default="0" Name="indexSearch" />
       <Variable x:TypeArguments="x:Int32" Name="sizeSearch" />
-      <Variable x:TypeArguments="x:Int32" Name="indexLimitLike">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="indexLimitLike" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
