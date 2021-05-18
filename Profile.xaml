@@ -224,7 +224,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.To>
-                    <State x:Name="__ReferenceID2" DisplayName="Follower" sap:VirtualizedContainerService.HintSize="606.4,1371.2" sap2010:WorkflowViewState.IdRef="State_7">
+                    <State x:Name="__ReferenceID2" DisplayName="Follower" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_7">
                       <State.Entry>
                         <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="561.6,1009.6" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                           <TryCatch.Try>
@@ -313,7 +313,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.Condition>
-                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="indexSearch &lt; sizeSearch" />
+                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="indexSearch &lt;= sizeSearch" />
                           </Transition.Condition>
                           <Transition.To>
                             <State x:Name="__ReferenceID4" DisplayName="Close" sap:VirtualizedContainerService.HintSize="133.6,61.6" sap2010:WorkflowViewState.IdRef="State_16">
