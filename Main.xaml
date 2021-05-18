@@ -344,12 +344,13 @@
       <Variable x:TypeArguments="x:Int32" Default="2" Name="limitLike" />
       <Variable x:TypeArguments="s:String[]" Name="searchProfile">
         <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;gro&quot;,&quot;vintageculture&quot;}" />
+          <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;fancy&quot;,&quot;vintageculture&quot;}" />
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="ui:Browser" Name="attachBrowser" />
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;#housemusic&quot;,&quot;#vintageculture&quot;}]" Name="searchHastag" />
       <Variable x:TypeArguments="x:Int32" Default="2" Name="limitProfile" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
